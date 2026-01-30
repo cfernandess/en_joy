@@ -47,3 +47,125 @@ h1 {
     width: 120px;
     margin-bottom: 10px;
 }
+
+.price {
+    color: #d63384;
+    font-weight: bold;
+}
+
+.qty-input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #ffb6d9;
+    font-size: 14px;
+}
+
+.add-to-cart {
+    background: #ff9ac2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background: #d63384;
+}
+
+.whatsapp-btn {
+    display: block;
+    background: #25d366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.whatsapp-btn:hover {
+    background: #1da851;
+}
+
+#cart {
+    background: #fff0f5;
+    border: 3px solid #ffb6d9;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #ffd1e6;
+}
+
+#total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d63384;
+    margin-top: 15px;
+}
+
+#order-form {
+    background: white;
+    border: 3px solid #ffb6d9;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+#order-form label {
+    display: block;
+    margin: 15px 0;
+}
+
+#order-form input,
+#order-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ffb6d9;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#order-form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+#send-order {
+    background: #d63384;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#send-order:hover {
+    background: #b84f7a;
+}
+
+footer {
+    background: #ffd6e8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 4px dashed #ff9ac2;
+}
