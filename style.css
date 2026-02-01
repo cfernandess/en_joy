@@ -28,6 +28,13 @@ header {
     margin-bottom: 10px;
 }
 
+.logo img {
+    width: 72px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 h1 {
     font-size: 38px;
     color: #d63384;
