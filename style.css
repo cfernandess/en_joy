@@ -127,6 +127,10 @@ h1 {
     align-items: center;
 }
 
+.product.is-hidden {
+    display: none;
+}
+
 .product:last-child {
     border-bottom: none;
 }
