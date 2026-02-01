@@ -3,7 +3,11 @@
 }
 
 body {
-    background: linear-gradient(135deg, #fff5f8 0%, #ffe4ec 100%);
+    background-color: #fdeff3;
+    background-image:
+        linear-gradient(90deg, rgba(255, 192, 215, 0.35) 0, rgba(255, 192, 215, 0.35) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%),
+        linear-gradient(0deg, rgba(255, 192, 215, 0.35) 0, rgba(255, 192, 215, 0.35) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    background-size: 26px 26px;
     font-family: 'Arial', sans-serif;
     color: #5a4a4a;
     margin: 0;
