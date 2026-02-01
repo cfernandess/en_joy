@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A Hebrew (RTL) bakery online store for "המאפים של גיל" (Gil's Baked Goods). Sells cookies, brownies, and rugelach with WhatsApp integration for orders.
+A Hebrew (RTL) bakery online store for "מתוקים בגליל התחתון" (Sweets in the Lower Galilee). Owner: גיל (Gil). Phone: 050-391-9925.
 
 ## Development
 
@@ -12,11 +12,15 @@ This is a static website with no build tools. Open `index.html` directly in a br
 
 ## Architecture
 
-- **index.html** - Product catalog with shopping cart and order form
-- **style.css** - Pink-themed styling
-- **script.js** - Cart logic (add items, render cart, form validation)
+- **index.html** - Product catalog with floating cart and order form
+- **style.css** - Pastel pink/white styling with rounded elements
+- **script.js** - Cart logic, bundle pricing, WhatsApp order integration
 
-The shopping cart is stored in a JavaScript array. Products use `data-name` and `data-price` attributes on select elements. Orders are validated to only allow Sunday-Thursday delivery dates.
+Products use `data-name`, `data-price`, `data-bundle-qty`, and `data-bundle-price` attributes. The floating cart panel toggles visibility. Orders are sent via WhatsApp with full order summary. Delivery dates validated to Sunday-Thursday only.
+
+## Images
+
+Product images go in the `images/` folder (e.g., `images/brownies.png`).
 
 ## Language
 

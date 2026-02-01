@@ -2,126 +2,208 @@
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>המאפים של גיל 🎀</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מתוקים בגליל התחתון 🥐</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>המאפים של גיל 🎀</h1>
-    <p class="sub">עוגיות • בראוניז • רוגעלך</p>
-    <p class="info">איסוף עצמי בכל ימי השבוע | אספקת המאפים בימי א'-ה' בלבד | הזמנה מוכנה בתוך 24 שעות</p>
+    <div class="logo">🥐</div>
+    <h1>מתוקים בגליל התחתון</h1>
+    <p class="sub">עוגיות • בראוניז • קאפקייקס • סופלה</p>
+    <p class="info">ניתן להזמין בכל ימות השבוע | אספקה בימי א'-ה' | הזמנה מוכנה תוך 24 שעות</p>
+    <p class="phone">📞 לבירורים: <a href="tel:0503919925">050-391-9925</a></p>
+    <p class="custom-orders">✨ ניתן לעשות הזמנות אישיות ומיוחדות בהתאמה אישית ✨</p>
 </header>
 
-<!-- כפתור וואטסאפ -->
-<a href="https://wa.me/972000000000?text=היי%20גיל,%20אני%20רוצה%20להזמין!"
-   class="whatsapp-btn" target="_blank">
-    💬 שלח לגיל הודעה בוואטסאפ
-</a>
+<!-- כפתורים ראשיים -->
+<div class="main-buttons">
+    <a href="https://wa.me/972503919925?text=היי%20גיל,%20אני%20רוצה%20להזמין!"
+       class="whatsapp-btn" target="_blank">
+        💬 שלח הודעה בוואטסאפ
+    </a>
+</div>
 
+<!-- עוגיות -->
 <section class="products">
     <h2>🍪 עוגיות</h2>
 
-    <div class="product">
-        <img src="cookie.png" class="prod-img">
-        <h3>עוגיות שוקולד צ'יפס 🎀</h3>
-
-        <label>כמות יחידות:
-            <select class="qty-input" data-name="עוגיות שוקולד צ'יפס" data-price="4">
-                <option value="5">5 יחידות</option>
-                <option value="10">10 יחידות</option>
-                <option value="15">15 יחידות</option>
-                <option value="20">20 יחידות</option>
+    <div class="product" data-name="עוגיות קלאסיות" data-price="4" data-bundle-qty="5" data-bundle-price="18">
+        <img src="images/classic-cookies.png" class="prod-img" alt="עוגיות קלאסיות">
+        <h3>עוגיות קלאסיות</h3>
+        <p class="price-info">4 ₪ ליחידה | סט של 5 ב-18 ₪</p>
+        <label>כמות:
+            <select class="qty-input">
+                <option value="1">1 יחידה - 4 ₪</option>
+                <option value="5" data-bundle="true">5 יחידות - 18 ₪</option>
+                <option value="10" data-bundle="true">10 יחידות - 36 ₪</option>
+                <option value="15" data-bundle="true">15 יחידות - 54 ₪</option>
             </select>
         </label>
+        <button class="add-to-cart">הוסף לסל 🛒</button>
+    </div>
 
-        <p class="price">מחיר ליחידה: 4 ₪</p>
-        <button class="add-to-cart">הוסף לסל 💗</button>
+    <div class="product" data-name="עוגיות פטל" data-price="5" data-bundle-qty="5" data-bundle-price="22">
+        <img src="images/raspberry-cookies.png" class="prod-img" alt="עוגיות פטל">
+        <h3>עוגיות פטל</h3>
+        <p class="price-info">5 ₪ ליחידה | מארז של 5 ב-22 ₪</p>
+        <label>כמות:
+            <select class="qty-input">
+                <option value="1">1 יחידה - 5 ₪</option>
+                <option value="5" data-bundle="true">5 יחידות - 22 ₪</option>
+                <option value="10" data-bundle="true">10 יחידות - 44 ₪</option>
+            </select>
+        </label>
+        <button class="add-to-cart">הוסף לסל 🛒</button>
+    </div>
+
+    <div class="product" data-name="עוגיות אוכמניות" data-price="5" data-bundle-qty="5" data-bundle-price="22">
+        <img src="images/blueberry-cookies.png" class="prod-img" alt="עוגיות אוכמניות">
+        <h3>עוגיות אוכמניות</h3>
+        <p class="price-info">5 ₪ ליחידה | מארז של 5 ב-22 ₪</p>
+        <label>כמות:
+            <select class="qty-input">
+                <option value="1">1 יחידה - 5 ₪</option>
+                <option value="5" data-bundle="true">5 יחידות - 22 ₪</option>
+                <option value="10" data-bundle="true">10 יחידות - 44 ₪</option>
+            </select>
+        </label>
+        <button class="add-to-cart">הוסף לסל 🛒</button>
+    </div>
+
+    <div class="product" data-name="עוגיות אמסטרדם" data-price="6" data-bundle-qty="5" data-bundle-price="28">
+        <img src="images/amsterdam-cookies.png" class="prod-img" alt="עוגיות אמסטרדם">
+        <h3>עוגיות אמסטרדם</h3>
+        <p class="price-info">6 ₪ ליחידה | מארז של 5 ב-28 ₪</p>
+        <label>כמות:
+            <select class="qty-input">
+                <option value="1">1 יחידה - 6 ₪</option>
+                <option value="5" data-bundle="true">5 יחידות - 28 ₪</option>
+                <option value="10" data-bundle="true">10 יחידות - 56 ₪</option>
+            </select>
+        </label>
+        <button class="add-to-cart">הוסף לסל 🛒</button>
     </div>
 </section>
 
+<!-- בראוניז -->
 <section class="products">
     <h2>🍫 בראוניז</h2>
 
-    <div class="product">
-        <img src="brownie.png" class="prod-img">
-        <h3>בראוניז – ריבוע 🎀</h3>
-
-        <label>כמות יחידות:
-            <select class="qty-input" data-name="בראוניז ריבועים" data-price="7">
-                <option value="4">4 יחידות</option>
-                <option value="8">8 יחידות</option>
-                <option value="12">12 יחידות</option>
+    <div class="product" data-name="בראוניז" data-price="7" data-bundle-qty="10" data-bundle-price="60">
+        <img src="images/brownies.png" class="prod-img" alt="בראוניז">
+        <h3>בראוניז</h3>
+        <p class="price-info">7 ₪ ליחידה | תבנית של 10 ב-60 ₪</p>
+        <label>כמות:
+            <select class="qty-input">
+                <option value="1">1 יחידה - 7 ₪</option>
+                <option value="2">2 יחידות - 14 ₪</option>
+                <option value="4">4 יחידות - 28 ₪</option>
+                <option value="6">6 יחידות - 42 ₪</option>
+                <option value="10" data-bundle="true">10 יחידות - 60 ₪</option>
+                <option value="15">15 יחידות - 105 ₪</option>
+                <option value="20">20 יחידות - 140 ₪</option>
             </select>
         </label>
-
-        <p class="price">מחיר ליחידה: 7 ₪</p>
-        <button class="add-to-cart">הוסף לסל 💗</button>
-    </div>
-
-    <div class="product">
-        <img src="brownie-pan.png" class="prod-img">
-        <h3>בראוניז – תבנית שלמה 🎀</h3>
-
-        <label>כמות יחידות:
-            <select class="qty-input" data-name="בראוניז תבנית" data-price="7">
-                <option value="12">תבנית ≈ 12 יחידות</option>
-                <option value="14">תבנית גדולה ≈ 14 יחידות</option>
-            </select>
-        </label>
-
-        <p class="price">מחיר ליחידה: 7 ₪</p>
-        <button class="add-to-cart">הוסף לסל 💗</button>
+        <button class="add-to-cart">הוסף לסל 🛒</button>
     </div>
 </section>
 
+<!-- סופלה -->
 <section class="products">
-    <h2>🥐 רוגעלך</h2>
+    <h2>🍮 סופלה</h2>
 
-    <div class="product">
-        <img src="rogalach.png" class="prod-img">
-        <h3>רוגעלך שוקולד 🎀</h3>
-
-        <label>כמות יחידות:
-            <select class="qty-input" data-name="רוגעלך שוקולד" data-price="4">
-                <option value="6">6 יחידות</option>
-                <option value="12">12 יחידות</option>
-                <option value="18">18 יחידות</option>
+    <div class="product" data-name="סופלה" data-price="8">
+        <img src="images/souffle.png" class="prod-img" alt="סופלה">
+        <h3>סופלה</h3>
+        <p class="price-info">8 ₪ ליחידה</p>
+        <label>כמות:
+            <select class="qty-input">
+                <option value="1">1 יחידה - 8 ₪</option>
+                <option value="2">2 יחידות - 16 ₪</option>
+                <option value="4">4 יחידות - 32 ₪</option>
+                <option value="6">6 יחידות - 48 ₪</option>
+                <option value="10">10 יחידות - 80 ₪</option>
+                <option value="15">15 יחידות - 120 ₪</option>
+                <option value="20">20 יחידות - 160 ₪</option>
             </select>
         </label>
-
-        <p class="price">מחיר ליחידה: 4 ₪</p>
-        <button class="add-to-cart">הוסף לסל 💗</button>
+        <button class="add-to-cart">הוסף לסל 🛒</button>
     </div>
 </section>
 
-<section id="cart">
-    <h2>🛒 סל קניות</h2>
-    <ul id="cart-items"></ul>
-    <p id="total">סה״כ: 0 ₪</p>
+<!-- קאפקייקס -->
+<section class="products">
+    <h2>🧁 קאפקייקס</h2>
+
+    <div class="product" data-name="קאפקייק שוקולד עם גנאש" data-price="9">
+        <img src="images/cupcake.png" class="prod-img" alt="קאפקייק שוקולד">
+        <h3>קאפקייק שוקולד עם גנאש</h3>
+        <p class="price-info">9 ₪ ליחידה</p>
+        <label>כמות:
+            <select class="qty-input">
+                <option value="1">1 יחידה - 9 ₪</option>
+                <option value="4">4 יחידות - 36 ₪</option>
+                <option value="6">6 יחידות - 54 ₪</option>
+                <option value="12">12 יחידות - 108 ₪</option>
+            </select>
+        </label>
+        <button class="add-to-cart">הוסף לסל 🛒</button>
+    </div>
 </section>
 
+<!-- עגלת קניות צפה -->
+<div id="floating-cart">
+    <div class="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+    </div>
+</div>
+
+<!-- חלונית עגלת קניות -->
+<div id="cart-panel" class="hidden">
+    <div class="cart-header">
+        <h2>🛒 סל קניות</h2>
+        <button class="close-cart" onclick="toggleCart()">✕</button>
+    </div>
+    <ul id="cart-items"></ul>
+    <p id="cart-empty">הסל ריק</p>
+    <div class="cart-footer">
+        <p id="total">סה״כ: <span id="cart-total">0</span> ₪</p>
+        <button id="checkout-btn" class="checkout-btn">💳 מעבר לתשלום</button>
+    </div>
+</div>
+
+<!-- טופס הזמנה -->
 <section id="order-form">
     <h2>📩 טופס הזמנה</h2>
 
-    <label>שם מלא:
-        <input type="text" id="name">
-    </label>
+    <form id="order-form-element">
+        <label>שם מלא:
+            <input type="text" id="name" required>
+        </label>
 
-    <label>טלפון:
-        <input type="text" id="phone">
-    </label>
+        <label>טלפון:
+            <input type="tel" id="phone" required>
+        </label>
 
-    <label>הערות להזמנה:
-        <textarea id="notes"></textarea>
-    </label>
+        <label>תאריך אספקה מבוקש:
+            <input type="date" id="date" required>
+        </label>
 
-    <button id="send-order">שליחת הזמנה 🎀</button>
+        <label>הערות להזמנה:
+            <textarea id="notes" placeholder="הזמנות מיוחדות, התאמות אישיות..."></textarea>
+        </label>
+
+        <button type="submit" id="send-order">שליחת הזמנה 🥐</button>
+    </form>
+    <p id="order-message"></p>
 </section>
 
 <footer>
-    <p>המאפים של גיל 🎀 | מתוק, חמוד ומוכן באהבה</p>
+    <p>מתוקים בגליל התחתון 🥐 | מתוק, חמוד ומוכן באהבה</p>
+    <p>📞 <a href="tel:0503919925">050-391-9925</a> | גיל</p>
 </footer>
 
 <script src="script.js"></script>
