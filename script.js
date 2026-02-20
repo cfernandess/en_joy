@@ -182,6 +182,21 @@ document.getElementById('checkout-btn').addEventListener('click', () => {
     toggleCart();
 });
 
+// Handle cake variant selection
+document.querySelectorAll('.variant-select').forEach(sel => {
+    const productEl = sel.closest('.product');
+    const baseName = productEl.dataset.baseName;
+
+    function updateVariant() {
+        const opt = sel.options[sel.selectedIndex];
+        productEl.dataset.price = sel.value;
+        productEl.dataset.name = `${baseName} – ${opt.dataset.label}`;
+    }
+
+    sel.addEventListener('change', updateVariant);
+    updateVariant();
+});
+
 // Initialize
 renderCart();
 updateCartCount();
